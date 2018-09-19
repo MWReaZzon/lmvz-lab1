@@ -1,0 +1,131 @@
+body {
+    background-color: rgb(252, 252, 252);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(75, 75, 75);
+}
+
+.main-wrapper {
+    margin: 15px auto;
+    max-width: 806px;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 10px;
+}
+
+.pizza-thumbnail {
+    width: 280px;
+    height: 305px;
+    border-right: 1px solid rgb(200, 200, 200);
+    border-bottom: 1px solid rgb(200, 200, 200);
+    background: white;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.pizza-thumbnail:hover {
+    border-color: rgb(150, 150, 150);
+    box-shadow: 0px 0px 7px rgb(200, 200, 200);
+}
+
+.pizza-image {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+}
+
+.pizza-info {
+    margin-top: 10px;
+    width: 260px;
+    margin: 0 auto;
+}
+
+.pizza-description {
+    width: 250px;
+    height: 70px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.pizza-name {
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+.pizza-price-label {
+    width: 90px;
+    height: 24px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    padding: 2px;
+    padding-left: 4px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.to-cart-button {
+    margin-top: 5px;
+    width: 90px;
+    height: 24px;
+    background-color: rgb(234, 136, 37);
+    color: white;
+    padding: 2px;
+    padding-left: 4px;
+    padding-top: 6px; 
+    text-align: center;
+    border-radius: 2px;
+}
+
+.to-cart-button:hover {
+    cursor: pointer;
+    background-color: rgb(244, 146, 47);
+}
+
+.controls {
+    width: 96px;
+}
+
+.pizza-ingridients {
+    height: 80px;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.controls-and-info {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 96px 165px;
+    grid-column-gap: 7px;
+}
+
+.ingridients-list {
+    font-style: italic; 
+}
+
+.ingridients-start {
+    font-style: bold;
+    font-weight: 800;
+    font-size: 13px;
+}
+
+@media (max-width: 576px) {
+    .main-wrapper {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-column-gap: 5px;
+    }
+
+    .pizza-thumbnail {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+    .main-wrapper {
+        max-width: 576px;
+        display: grid;
+        grid-template-columns: 288px 288px;
+    }
+
+}
