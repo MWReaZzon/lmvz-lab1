@@ -1,4 +1,4 @@
-.basket-icon-container {
+.cart-icon-container {
     padding: 10px;
     position: fixed;
     top: 6%;
@@ -6,12 +6,12 @@
     z-index: 3;
 }
 
-.basket-icon-container:hover {
+.cart-icon-container:hover {
     background: rgb(200, 200, 200);
     border-radius: 20px;
 }
 
-.basket-window-background {
+.cart-window-background {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -41,25 +41,27 @@
 .cart-header {
     border-top-left-radius: 150px 60px;
     background-color: rgb(75, 75, 75);
-    height: 36px;
-    padding: 10px;
+    height: 40px;
+    padding: 5px;
 }
 
 .cart-footer {
     background: rgba(75, 75, 75);
     border-bottom-right-radius: 150px 60px;
-    height: 36px;
-    padding: 10px;
+    height: 40px;
+    padding: 5px;
 }
 
 .cart-header-text {
     text-align: center;
+    height: 28px;
     font-size: 26px;
     color: rgba(255, 255, 255, 0.9);
 }
 
 .to-payment-button-text {
     text-align: center;
+    height: 28px;
     font-size: 26px;
     color: rgba(255, 255, 255, 0.9);
 }
@@ -68,28 +70,3 @@
     cursor: pointer;
 }
 
-
-.odd-menu-thumbnail {
-    background-color: rgb(255, 255, 255);
-}
-
-.even-menu-thumbnail {
-    background-color: rgb(248, 248, 248);
-}
-
-.odd-menu-thumbnail, .even-menu-thumbnail {
-    height: 75px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 5px;
-    width: 95%;
-    margin: 0 auto;
-    border: 1px solid rgb(200, 200, 200);
-    border-bottom: 1px solid rgb(180, 180, 180);
-    box-shadow: 0px 0px 7px rgb(200, 200, 200);
-}
-
-.odd-menu-thumbnail:hover, .even-menu-thumbnail:hover {
-    border: 1px solid rgb(150, 150, 150);
-    box-shadow: 0px 0px 7px rgb(120, 120, 120);
-}
