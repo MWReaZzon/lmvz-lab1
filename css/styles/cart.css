@@ -4,11 +4,12 @@
     top: 6%;
     right: 4%;
     z-index: 3;
+    border-radius: 20px;
 }
 
 .cart-icon-container:hover {
     background: rgb(200, 200, 200);
-    border-radius: 20px;
+    cursor: pointer;
 }
 
 .cart-window-background {
@@ -22,6 +23,7 @@
     z-index: 2;
     background: rgba(0, 0, 0, 0.5);
     overflow-y: scroll;
+    display: none;
 }
 
 .cart {

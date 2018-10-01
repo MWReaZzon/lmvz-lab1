@@ -27,6 +27,6 @@ function loadData() {
                     "</div>" + 
                 "</div>" +
             "</div>"
-        )
+        );
     }
 }

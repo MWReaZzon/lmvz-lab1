@@ -4,6 +4,10 @@ body {
     color: rgb(75, 75, 75);
 }
 
+.none {
+    display: none;
+}
+
 .main-wrapper {
     margin: 15px auto;
     max-width: 806px;
