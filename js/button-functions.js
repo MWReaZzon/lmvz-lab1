@@ -8,7 +8,7 @@ function openCart(){
     CartButtonImage.src = "res/return-arrow.png";
     CartPage.fadeIn();
     appendCart(CartPage);
-    cartItemRemoveHandling();
+    initCartFunctions();
     return false;
 }
 
@@ -36,16 +36,6 @@ AddtoCartButtons.click(function() {
     cartNotify();
 });
 
-function cartItemRemoveHandling() {
-    $('.cart-item-remove').click(function() {
-        var root = getRootNode("cart-item", this);
-        var pizzaId = parseInt(root.getAttribute("data-pizza-id"));
-        var pizza = getPizzaById(pizzaId);
-        cart.removePizza(pizza);
-        // remove thumbnail
-        root.parentNode.remove();
-    });
-}
 
 function removeCart(parentNode) {
     var f = parentNode
@@ -98,7 +88,7 @@ function appendCart(parentNode) {
                                 "<img src='res/minus.png' alt='' width='100%'/>"+
                             "</div>"+
                             "<div class='cart-item-count-input'>"+
-                                "<input class='input-count' type='text'/>"+
+                                "<input class='input-count' type='text' value='"+cartItem.number+"'/>"+
                             "</div>"+
                             "<div class='cart-item-increment-count'>"+
                                 "<img src='res/plus.png' alt='' width='100%'/>"+
